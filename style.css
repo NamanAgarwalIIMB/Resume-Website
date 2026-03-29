@@ -1,0 +1,225 @@
+/* Color Palette 
+   Primary: #1B3C53 Deep Navy
+   Secondary: #234C6A Slightly lighter blue 
+   Accent: #456882
+   Text/Light: #D2C1B6 Light Sand Text
+*/
+html {
+    scroll-behavior:smooth;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    background-color: #1B3C53; /* Deep Navy */
+    color: #D2C1B6; /* Light Sand Text */
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Navigation */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 10%;
+    background: #1B3C53;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar ul {
+    display: flex;
+    list-style: none;
+}
+
+.navbar ul li a {
+    color: #D2C1B6;
+    text-decoration: none;
+    margin-left: 25px;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.navbar ul li a:hover {
+    color: #456882;
+}
+
+.logo {
+    font-weight: 700;
+    letter-spacing: 2px;
+    font-size: 1.2rem;
+}
+
+/* Hero Section */
+.hero {
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background: linear-gradient(rgba(27, 60, 83, 0.8), rgba(27, 60, 83, 0.8));
+}
+
+.hero h1 {
+    font-size: 3.5rem;
+    margin-bottom: 10px;
+}
+
+.highlight {
+    color: #B08D57;
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 30px;
+    background-color: #456882;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+.btn:hover {
+    background-color: #234C6A;
+}
+
+/* Sections */
+.section {
+    padding: 100px 0;
+}
+
+.alt-bg {
+    background-color: #234C6A; /* Slightly lighter blue */
+}
+
+.section-title {
+    font-size: 2rem;
+    margin-bottom: 40px;
+    border-bottom: 2px solid #456882;
+    display: inline-block;
+}
+
+/* Skills List  */
+.skills-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 20px;
+    list-style: none;
+}
+
+.skills-list li {
+    background: #456882;
+    color: #fff;
+    padding: 15px;
+    text-align: center;
+    border-radius: 8px;
+    font-weight: bold;
+}
+
+/* Project Card */
+.project-card {
+    background: #234C6A;
+    padding: 30px;
+    border-left: 5px solid #D2C1B6;
+    margin-bottom: 20px;
+}
+
+/* Footer */
+footer {
+    padding: 80px 0 20px 0;
+    text-align: center;
+    background: #1B3C53;
+}
+
+footer a {
+    color: #D2C1B6;
+    font-weight: bold;
+}
+
+.footer-bottom {
+    margin-top: 50px;
+    font-size: 0.8rem;
+    opacity: 0.7;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .hero h1 { font-size: 2.5rem; }
+    .navbar { flex-direction: column; }
+    .navbar ul { margin-top: 20px; }
+    .navbar ul li { margin: 0 10px; }
+}
+
+/* --- SECTION LAYOUTS --- */
+.section {
+    padding: 80px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.section-title {
+    font-size: 2rem;
+    margin-bottom: 30px;
+    border-bottom: 2px solid #456882;
+    color: #D2C1B6;
+}
+
+/* --- ABOUT SECTION --- */
+.about-content p {
+    margin-bottom: 1.5rem;
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #D2C1B6;
+    max-width: 800px;
+
+}
+
+.about-content strong {
+    color: #456882;
+    font-weight: 600;
+}
+
+#highlight{
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+/* --- SKILLS SECTION (Button Style) --- */
+.skills-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    list-style: none;
+    padding: 0;
+}
+
+.skills-list li {
+    background: #234C6A;
+    border: 1px solid #456882;
+    color: #D2C1B6;
+    padding: 10px 20px;
+    border-radius: 4px;
+    font-size: 0.9rem;
+    transition: transform 0.2s;
+}
+
+.skills-list li:hover {
+    transform: translateY(-3px);
+    background: #456882;
+    color: #FFF;
+}
